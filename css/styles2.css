@@ -1,0 +1,451 @@
+html{
+    font-family: "Arial", Sans-serif;
+}
+
+
+
+/* Header */
+
+#header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px -2px gray;
+    position: relative;
+    z-index: 2;
+}
+#header .header-inner{
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+#header .header-inner .logo{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+#header .header-inner .nav{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-menu>li{
+    width: fit-content;
+    margin-right: 15px;
+    padding: 5px;
+    position: relative;
+}
+.main-menu>li>a{
+    text-decoration: none;
+    color: #020516;
+    text-transform: uppercase;
+    font-family: 'Archivo', sans-serif;
+}
+.main-menu>li>a.active{
+    color: #0b249e;
+    text-shadow: 1px 1px #f5eeef;
+}
+.sub-menu{
+    display: none;
+}
+.main-menu>li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #f4f4ff;
+    padding: 10px;
+    width: max-content;
+}
+.main-menu>li:hover .sub-menu li{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.main-menu>li:hover .sub-menu li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Archivo', sans-serif;
+}
+
+
+/* Slider */
+#slider{
+    padding: 10px;
+}
+.slider-content{
+    columns: 2;
+    padding: 63px;
+}
+#slider  img{
+    max-width: 100%;
+}
+#slider .content-img{
+    padding: 5%;
+}
+#slider .content-text{
+    position: relative;
+    top: 50px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.slider-why{
+    padding: 36px 60px 63px 60px;
+}
+
+.slider-why>p{
+    text-align: center;
+    color: #000000;
+    margin: 0px 0px 20px 0px;
+    font-family: "Arial", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+.slider-why .why-content{
+    columns: 3;
+    display: flex;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.slider-why .why-content-3{
+    border: 1px solid rgb(11, 36, 158);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin: 50px;
+    position: relative;
+    left: auto;
+    right: auto;
+}
+.why-content-3 i{
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+.why-content-3 i,
+.why-content-3 h2{
+    color: rgb(11, 36, 158);
+}
+.why-content-3 h2{
+    font-size: 18px;
+}
+.why-content-3 p{
+    font-size: 15px;
+}
+
+/* Position */
+#position{
+    width: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #0A2E9E 0%, #780BBD 100%);
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    padding: 80px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+#position>p{
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: 700;
+}
+#position .position-container-item{
+    display: flex;
+}
+.position-container-item .container-item{
+    max-width: 25%;
+    background-color: #fff;
+    margin: 15px;
+}
+.position-container-item .container-item a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+.position-container-item .container-item img{
+    max-width: 100%;
+    background-size: cover;
+}
+.position-container-item .container-item p{
+    padding: 10px;
+    line-height: 1.4;
+}
+.container-item:hover a{
+    color: blue;
+    opacity: 1;
+}
+.position-container .container-content{
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.4;
+    padding: 20px 30px;
+}
+.container-content>p{
+    display: block;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 20px;
+}
+.container-content .sign-up{
+    margin-right: auto;
+    margin-left: auto;
+    width: 170px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 3px solid #fff;
+    text-align: center;
+    padding: 10px 10px 10px 20px;
+}
+.container-content .sign-up a{
+    text-decoration: none;
+    color: #fff;
+}
+.sign-up:hover{
+    background-color: #FF7B06;
+}
+
+/* subject */
+#subject{
+    text-align: center;
+    padding: 60px 0;
+    max-width: 100%;
+}
+#subject>p{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 25px 0;
+}
+#subject .subject-content{
+    display: flex;
+    margin: 0 60px;
+}
+.subject-content .subject-item{
+    max-width: 33.333333%;
+    height: auto;
+    border: 2px solid #E1E0E0;
+    margin: 0 15px;
+    padding: 15px;
+}
+.subject-item img{
+    max-width: 100%;
+    height: auto;
+    transition-duration: 0.3s;
+    background-size: cover;
+}
+.subject-item p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5em;
+    padding: 10px;
+    margin: 10px 0;
+}
+/* form-subject */
+#form-subject{
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #08219F 0%, #2102D5 100%);
+    text-align: center;
+    display: flex;
+    padding: 40px;
+}
+#form-subject .form-sign-up{
+    width: 50%;
+}
+.form-SignUp-text{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.form-SignUp-text h1{
+    color: rgb(255, 253, 9);
+    font-size: 24px;
+    margin-top: 20px;
+}
+.form-sign-up .form1 p{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.form-SignUp .send{
+    margin-top: 20px;
+}
+.form-information{
+    text-align: left;
+    line-height:1.6;
+}
+.form-information ul,
+.form-information p{
+    color: #fff;
+}
+.form-information i{
+    color: yellow;
+}
+
+.form-information-1{
+    position: relative;
+    left: 40px;
+    top: 30px;
+}
+.form-information-2{
+    position: relative;
+    left: 80px;
+    top: 30px;
+}
+
+/* course-content */
+#course-content{
+    background-color: #C4C4C45C;
+    padding: 80px 0 23px;
+}
+#course-content .course-text p{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+#course-content .course-cointainer{
+    display: flex;
+}
+.course-cointainer .course-container-item{
+    max-width: 50%;
+}
+.course-container-item-2{
+    line-height: 2;
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+.course-container-item img{
+    padding: 30px;
+    max-width: 100%;
+}
+.course-container-item p{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.form-an{
+    margin-top: 20px;
+}
+.form-an a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+.form-an li{
+    list-style-type: disc;
+    margin-left: 30px;
+}
+/* multi */
+.multi{
+    padding: 50px;
+}
+.multi h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+.multi img{
+    height: 130px;
+}
+/* container1 */
+.container1{
+    padding: 40px 50px 50px;
+    color: white;
+    width: 100%;
+    background-color: #2F319E;
+    font-size: 19px;
+    font-family: inherit;
+    font-weight: bold;
+}
+.row .col-sm{
+    padding: 0 20px;
+}
+.laptrinh{
+    color: white;
+    text-decoration: none;
+}
+.size-20{
+    font-size: 20px;
+    font-weight: 700;
+}
+.row .col-sm p{
+    margin-top: 25px;
+    line-height: 1.6;
+}
+.laptrinh p{
+    font-size: 16px;
+}
+iframe{
+    margin-top: 25px;
+}
+.laptrinh:hover{
+    color: white;
+}
+input[type='text']{
+    width: 100%;
+    height: 40px;
+    padding: 9px;
+    margin: 5px 0 15px 0;
+    display: inline;
+    background-color: #EDEDED;
+    color: #333333;
+}
+#td{
+    width: 100%;
+    padding: 9px;
+    margin: 5px 0 15px 0;
+    display: inline;
+    border: none;
+    background-color: #EDEDED;
+    color: #333333;
+}
+#td:focus{
+    background-color: #ddd;
+    outline: none;
+}
+input[type='text']:focus
+{
+    background-color: #ddd;
+    outline: none;
+}
+.send {
+    background-color: #edb017;
+    color: #0a0a0a;
+    height: 45px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin: 5px 0 15px 0;
+    opacity: 0.8;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+.send:hover{
+    opacity: 1;
+    background-color: blue;
+    color: white;
+}
